@@ -1,0 +1,2 @@
+INSERT INTO empleado (id_empleado, fecha , nombre,salario) VALUES ( '01', '12/12/2019','andres perez','2500');
+INSERT INTO solicitud (id_solicitud, codigo , descripcion,resumen,id_empleado) VALUES ( '01', '2201','aprobaciomn ','resumen de aprobacion','01');
