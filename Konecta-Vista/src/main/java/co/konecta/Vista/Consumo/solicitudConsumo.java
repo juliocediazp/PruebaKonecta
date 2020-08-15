@@ -12,34 +12,30 @@ import javax.ws.rs.core.MultivaluedHashMap;
 import javax.ws.rs.core.MultivaluedMap;
 import javax.ws.rs.core.Response;
 
-import org.jboss.resteasy.client.jaxrs.ResteasyClient;
-import org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder;
-import org.jboss.resteasy.client.jaxrs.ResteasyWebTarget;
-
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.sun.demo.jvmti.hprof.Tracker;
 
 import co.konecta.Vista.model.Empleado;
+import co.konecta.Vista.model.Solicitud;
 
-public class EmpleadoConsumo {
-	
-	
+public class solicitudConsumo {
+
+	private static final Type type = null;
 	Gson gson = new Gson();
 	Client cliente ;
 	
-	public ArrayList<Empleado> getEmpleado() {
+	public ArrayList<Solicitud> getSolicitud() {
 
 	try {	
      	
-		Type listType = new TypeToken<ArrayList<Empleado>>(){}.getType();
+		Type listType = new TypeToken<ArrayList<Solicitud>>(){}.getType();
 		
 		cliente = ClientBuilder.newClient();
-		String empleado = cliente.target("http://localhost:8080/api/empleado")
+		String solicitud = cliente.target("http://localhost:8080/api/solicitud")
 		.request(MediaType.APPLICATION_JSON_TYPE).get(String.class);
-		System.out.println(empleado);
+		System.out.println(solicitud);
 		
-		ArrayList<Empleado> arrayDeJson = gson.fromJson(empleado, listType);
+		ArrayList<Solicitud> arrayDeJson = gson.fromJson(solicitud, listType);
 
 	return arrayDeJson;
 		 
@@ -48,27 +44,23 @@ public class EmpleadoConsumo {
 		return null;
 	}
 		}
-	
-	public void postEmpleado(Empleado empleado){
+	public void postSolicitud(Solicitud solicitud){
 		
 		try {
 			MultivaluedMap<String, String> formData = new MultivaluedHashMap<String, String>();
-			 // String json = gson.toJson(empleado,type);
-			  formData.add("01", empleado.getNombre());
-			  formData.add("02", empleado.getFechaIngreso());
-			  formData.add("03", empleado.getSalario());
+			 // String json = gson.toJson(solicitud,type);
+			  formData.add("", solicitud.getCodigo());
+			  formData.add("", solicitud.getDescripcion());
+			  formData.add("", solicitud.getResumen());
+			  formData.add("", solicitud.getId_empleado().getId());
 			WebTarget webTarget = cliente.target("http://localhost:8080/api/empleado");
-			Response response = webTarget.request().post(Entity.form(formData));
+			Response response = webTarget.request().post(Entity.form(formData));	  
 			
-		
-			
-			
-		
 		} catch (Exception e) {
 			System.out.println("Error de Exception" + e);
 		}
 		
 		
 	}
-
+	
 }

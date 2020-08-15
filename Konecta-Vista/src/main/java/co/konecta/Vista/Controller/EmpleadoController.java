@@ -49,7 +49,7 @@ public class EmpleadoController {
 			) {
 		
 		if (result.hasErrors()) {
-			//System.out.println("Existieron errores");
+			System.out.println("Existieron errores");
 			return "empleado/formEmpleado";
 		}
 

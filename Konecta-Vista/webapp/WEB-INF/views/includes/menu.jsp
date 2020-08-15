@@ -14,8 +14,8 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">  
-            <li><a href="${urlRoot}empleados/index">Empleados</a></li>
-            <li><a href="${urlRoot}solicitudes/index">Solicitudes</a></li>             
+            <li><a href="${urlRoot}empleado/index">Empleados</a></li>
+            <li><a href="${urlRoot}solicitud/index">Solicitudes</a></li>             
                      
           </ul>
         </div><!--/.nav-collapse -->

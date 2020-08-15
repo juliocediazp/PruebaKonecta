@@ -27,6 +27,11 @@
     <artifactId>resteasy-client</artifactId>
     <version>3.0.2.Final</version>
 </dependency>
+<!-- <dependency> -->
+<!--     <groupId>com.sun.jersey</groupId> -->
+<!--     <artifactId>jersey-bundle</artifactId> -->
+<!--     <version>1.18.1</version> -->
+<!-- </dependency> -->
 <dependency>
     <groupId>com.google.code.gson</groupId>
     <artifactId>gson</artifactId>

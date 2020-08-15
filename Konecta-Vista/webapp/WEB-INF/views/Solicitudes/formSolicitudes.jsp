@@ -27,25 +27,30 @@
         <div class="row">         
           <div class="col-sm-6">
             <div class="form-group">
-              <label for="titulo">codigo</label>             
-              <input type="text" class="form-control" name="titulo" id="titulo" required="required"/>
+              <label for="codigo">codigo</label>             
+              <input type="text" class="form-control" name="codigo" id="codigo" required="required"/>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="form-group">
-              <label for="estatus">empleado</label>             
-              <select id="estatus" name="estatus" class="form-control">
-                <option value="Activa">Activa</option>
-                <option value="Inactiva">Inactiva</option>                
-              </select>  
-            </div>
+              <label for="empleado">empleado</label>             
+              <input type="text" class="form-control" name="empleado" id="empleado" required="required"/>
+             </div>
           </div>
         </div>
         <div class="row"> 
           <div class="col-sm-12">
             <div class="form-group">
-              <label for="detalle">descripcion</label>             
-              <textarea class="form-control" name="detalle" id="detalle" rows="10"></textarea>
+              <label for="descripcion">descripcion</label>             
+              <textarea class="form-control" name="descripcion" id="descripcion" rows="10"></textarea>
+            </div>  
+          </div>
+        </div>
+         <div class="row"> 
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="resumen">resumen</label>             
+              <textarea class="form-control" name="resumen" id="resumen" rows="10"></textarea>
             </div>  
           </div>
         </div>

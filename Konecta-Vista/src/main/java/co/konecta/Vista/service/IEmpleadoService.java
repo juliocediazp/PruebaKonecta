@@ -7,6 +7,6 @@ import co.konecta.Vista.model.Empleado;
 public interface IEmpleadoService {
 	void insertar(Empleado empleado); 
 	List<Empleado> buscarTodas();
-	Empleado buscarPorId(int idEmpleado);
-	List<String> buscarGeneros();
+
+	
 }

@@ -47,15 +47,15 @@
         <div class="row">
           <div class="col-sm-3">
             <div class="form-group">
-              <label for="titulo">NOMBRE</label>
-              <form:hidden path="id"/>
-              <form:input type="text" class="form-control" path="titulo" id="titulo" required="required" />
+              <label for="nombre">NOMBRE</label>
+              <form:hidden path="nombre"/>
+              <form:input type="text" class="form-control" path="nombre" id="nombre" required="required" />
             </div>  
           </div>
           <div class="col-sm-3">
             <div class="form-group">
-              <label for="duracion">SALARIO</label>
-              <form:input type="text" class="form-control" path="duracion" id="duracion" required="required" />
+              <label for="salario">SALARIO</label>
+              <form:input type="text" class="form-control" path="salario" id="salario" required="required" />
             </div>  
           </div>
          
@@ -63,22 +63,14 @@
          
 
         <div class="row">
+         
           <div class="col-sm-3">
             <div class="form-group">
-              <label for="estatus" class="control-label">Estatus</label>              
-              <form:select id="genero" path="estatus" class="form-control">
-                <form:option value="Activa">Activo</form:option>
-                <form:option value="Inactiva">Inactivo</form:option>               
-              </form:select>             
-            </div> 
-          </div>     
-          <div class="col-sm-3">
-            <div class="form-group">
-              <label for="fechaEstreno">Fecha de ingreso</label>             
-              <form:input type="text" class="form-control" path="fechaEstreno" id="fechaEstreno" required="required" />
+              <label for="fechaIngreso">Fecha de ingreso</label>             
+              <form:input type="text" class="form-control" path="fechaIngreso" id="fechaIngreso" required="required" />
             </div>  
           </div>
-
+          </div>
           
 		
         <button type="submit" class="btn btn-danger" >Guardar</button>

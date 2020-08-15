@@ -28,6 +28,7 @@ public class PruebaControllerEmpleado {
 	
 	@PostMapping("/empleado") 
 	public Empleado guardar(@RequestBody Empleado empleado) {
+		System.out.println("ingreso");
 		servicePrueba.guardar(empleado);
 		return empleado;
 	}

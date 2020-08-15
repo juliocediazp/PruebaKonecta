@@ -26,30 +26,12 @@ public class EmpeladoServiceImpl implements IEmpleadoService {
 		return emplea;
 	}
 
-
-
-	public Empleado buscarPorId(int idEmpleado) {
-		for (Empleado p : emplea){
-//			if (p.getId() == idEmpleado){
-//				return p;				
-//			}
-		}
-		return null;
-	}
-
-
 	
 	public void insertar(Empleado empleado) {
-		//lista.add(empleado);
+		consumo.postEmpleado(empleado);
 	}
 
 
 
-	public List<String> buscarGeneros() {
-		
-
-				
-		return null;
-	}
 	
 }
